@@ -51,7 +51,7 @@
       ctx.font = "15px Monospace";
       // ctx.alignItems = "center"
       ctx.fillText("Game Over - Score: " + score, size / 2, size / 2);
-      ctx.fillText("SPACE to continue", size / 2, 300);
+      ctx.fillText("REFRESH to continue", size / 2, 300);
       if (newDirection == 5) {
         location.reload();
       }
