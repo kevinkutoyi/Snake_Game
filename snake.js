@@ -4,6 +4,7 @@
   var grid_size = size / 50;
   var field = document.getElementById("field");
   field.height = field.width = size * 2;
+  field.style.alignItems = "center";
   // field.height = size * 2;
   // field.width = size / 1;
   field.style.width = field.style.height = size + "px";
@@ -48,6 +49,7 @@
     if (end) {
       ctx.fillStyle = "#e8dbb0";
       ctx.font = "15px Monospace";
+      // ctx.alignItems = "center"
       ctx.fillText("Game Over - Score: " + score, size / 2, size / 2);
       ctx.fillText("SPACE to continue", size / 2, 300);
       if (newDirection == 5) {
